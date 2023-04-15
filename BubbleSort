@@ -1,3 +1,4 @@
+```python
 import random
 
 sort_num = random.sample(range(50), 10)
@@ -15,3 +16,4 @@ for i in range(len(sort_num) -1):
 
 print('After Bubble')
 print(sort_num
+```
