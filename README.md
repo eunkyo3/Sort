@@ -12,17 +12,19 @@ import random
 sort_num = random.sample(range(50), 10)
 
 # 정렬하기 전
+print('Before Bubble')
 print(sort_num)
 
 # 버블 정렬 과정
-for i in range(len(sort_num) -1):   #
-    for j in range(len(sort_num) -i -1):    #
-        if sort_num[j] > sort_num[j+1]: #
-            sort_num[j], sort_num[j+1] = sort_num[j+1], sort_num[j] #
+for i in range(len(sort_num) -1):   # 버블 할 범위
+    for j in range(len(sort_num) -i -1):    # 버블 정렬은 뒤부터 채우기 때문에 한칸씩 앞으로 당김
+        if sort_num[j] > sort_num[j+1]: # 값 비교
+            sort_num[j], sort_num[j+1] = sort_num[j+1], sort_num[j] # 순서를 바꿈
         else:   # if에 해당하지 않으면 넘어감
             pass
 
 # 정렬한 후
+print('After Bubble')
 print(sort_num)
 ```
 ## CODE 해석
