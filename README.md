@@ -48,3 +48,11 @@ print(sort_num)
  
 2. 정렬 돼있지 않은 원소가 정렬 됐을때의 자리로 가기 위해서, 교환 연산(swap)이 많이 일어나게 된다.
 
+## Selection Sort(선택 정렬)
+선택 정렬이란 버블 정렬과 유사한 알고리즘으로, 해당 순서에 원소를 넣을 위치는 이미 정해져 있고, 어떤 원소를 넣을지 선택하는 알고리즘이다.
+## GIF로 이해하는 Selection Sort
+![selection](https://user-images.githubusercontent.com/112944851/232245480-5037eff2-87f4-40d5-9348-5086820da7d5.gif)
+## CODE로 이해하는 Selection Sort
+```python
+print('wait')
+```
