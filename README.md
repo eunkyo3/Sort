@@ -48,7 +48,26 @@ print(sort_num)
 ![selection](https://user-images.githubusercontent.com/112944851/232245480-5037eff2-87f4-40d5-9348-5086820da7d5.gif)
 ### CODE로 이해하는 Selection Sort
 ```python
-print('wait')
+import random
+
+# 무작위 정렬 숫자 선택
+sort_num = random.sample(range(50), 10)
+
+# 정렬하기 전
+print('Before Selection')
+print(sort_num)
+
+# 선택 정렬 과정
+for i in range(len(sort_num) - 1):  # N개의 데이터가 있는 리스트는 최대 N - 1번의 정렬이면 된다.
+    min_index = i   # 가장 작은 값을 갖는 데이터의 index
+    for j in range(i + 1, len(sort_num)):   # 현재 인덱스부터 마지막 인덱스까지 최소값의 인덱스를 찾음
+        if sort_num[min_index] > sort_num[j]:   #  가작 작은 값의 변수가 다음 인덱스의 값보다 클 경우
+            min_index = j   # 값을 변경
+    sort_num[i], sort_num[min_index] = sort_num[min_index], sort_num[i] # 값 바꾸기
+
+# 정렬한 후
+print('After Selection')
+print(sort_num)
 ```
 ### 시간복잡도
 데이터의 개수가 n개라고 했을 때
@@ -72,3 +91,15 @@ print('wait')
 * 시간복잡도가 O(n^2)으로, 비효율적이다.
 
 * 불안정 정렬(Unstable Sort) 이다.
+## Insertion Sort(삽입 정렬)
+삽입 정렬은 자료 배열의 모든 요소를 앞에서부터 차례대로 이미 정렬된 배열 부분과 비교하여, 자신의 위치를 찾아 삽입함으로써 정렬을 완성하는 알고리즘이다.
+### GIF로 이해하는 Insertion Sort
+![Insertion](https://user-images.githubusercontent.com/112944851/232316391-08625527-9a29-4bbe-baf0-f8ecad35f726.gif)
+### CODE로 이해라는 Insertion Sort
+```python
+print('wait')
+```
+### 시간복잡도
+### 공간복잡도
+### 장점
+### 단점
