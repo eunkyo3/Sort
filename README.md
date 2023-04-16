@@ -19,7 +19,7 @@ print(sort_num)
 for i in range(len(sort_num) -1):   # 버블 할 범위
     for j in range(len(sort_num) -i -1):    # 버블 정렬은 뒤부터 채우기 때문에 한칸씩 앞으로 당김
         if sort_num[j] > sort_num[j+1]: # 값 비교
-            sort_num[j], sort_num[j+1] = sort_num[j+1], sort_num[j] # 순서를 바꿈
+            sort_num[j], sort_num[j+1] = sort_num[j+1], sort_num[j] # if문 조건에 충족하면 순서를 바꿈
         else:   # if에 해당하지 않으면 넘어감
             pass
 
